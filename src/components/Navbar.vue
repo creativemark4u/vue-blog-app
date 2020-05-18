@@ -12,11 +12,8 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active" v-if="authUser">
-                        <router-link class="nav-link" to="/home">Home</router-link>
-                    </li>
                     <li class="nav-item" v-if="authUser">
-                        <router-link class="nav-link" to="#">Articles</router-link>
+                        <router-link class="nav-link" to="/home">Articles</router-link>
                     </li>
                     <li class="nav-item" v-if="authUser">
                         <router-link class="nav-link" to="/articles/create">Create Article</router-link>
